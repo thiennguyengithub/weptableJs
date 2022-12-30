@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="./index.css">
+     <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.15/sweetalert2.min.css" />     
+</head> 
+
+<body>
+    <h2>Thông tin sinh viên</h2>
+    <div>
+        <p>Mã sinh viên</p>
+        <input type="number"  id="msv" disabled>
+    </div>
+    <div>
+        <p>Họ và Tên</p>
+        <input type="text" id="hvt" placeholder="nhập họ và têm(bắt buộc)">
+    </div>
+    <div id="mes"></div>
+    <div>
+        <p>Năm sinh</p>
+        <input type="date" id="ns">
+    </div>
+    <div>
+        <p>Quê quán</p>
+        <input type="text" id="qq" placeholder="nhập địa chỉ">
+    </div>
+    <div>
+        <p>Điểm toán</p>
+        <input type="number" id="dt"  placeholder="nhập điểm toán">
+    </div>
+    <div>
+        <p>Điểm lý</p>
+        <input type="number" id="dl" placeholder="nhập điểm lý">
+    </div>
+    <div>
+        <p>Điểm hóa</p>
+        <input type="number" id="dh" placeholder="nhập điểm hóa">
+    </div>
+    <div style="margin-bottom: 30px; " class="button">
+        <button class="button01" style="margin-right: 10px;" onclick="update()">Update</button>
+        <button class="button02" onclick="reset()">reset</button>
+    </div>
+    <div>
+        <table>
+            <tr>
+              <th>Mã sv</th>
+              <th>Họ & Tên</th>
+              <th>Năm sinh</th>
+              <th>Quê quán</th>
+              <th>Toán</th>
+              <th>Lý</th>
+              <th>Hóa</th>
+              <th>Điểm TB</th>
+              <th>Trạg thái</th>
+              <th>action</th>
+            </tr>
+            <tbody id="tbody"></tbody>
+          </table>
+    </div>
+    <div id="no-Data"></div>
+
+</body>
+<script src="./main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.15/sweetalert2.min.js"></script>
+</html>
